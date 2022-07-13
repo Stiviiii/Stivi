@@ -27,7 +27,7 @@ conn.sendButton(m.chat, `${eg}𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉
 }  
  }
 handler.help = ['open / close', 'abrir / cerrar']
-handler.tags = ['group', 'cerrar', 'abrir']
+handler.tags = ['main']
 handler.command = /^(group|grupo|cerrar|abrir)$/i
 handler.admin = true
 handler.botAdmin = true
