@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg'  
-let isClose = { // Switch Case Like :v
+let isClose = { // Switch Case Like 
 'open': 'not_announcement',
 'close': 'announcement',
 'abierto': 'not_announcement',
@@ -26,9 +26,9 @@ if (isClose === 'announcement'){
 conn.sendButton(m.chat, `${eg}𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉𝙎 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!`, `𝙂𝙍𝙐𝙋𝙊 𝘾𝙀𝙍𝙍𝘼𝘿𝙊\n${wm}`, pp, [['𝙈𝙤𝙢𝙚𝙣𝙩𝙤 𝘼𝙙𝙢𝙞𝙣 😎', '.s'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]], m)
 }  
  }
-handler.help = ['open / close', 'abrir / cerrar']
-handler.tags = ['main']
-handler.command = /^(group|grupo|cerrar|abrir)$/i
+handler.help = ['group open / close', 'grupo abrir / cerrar']
+handler.tags = ['group']
+handler.command = /^(group|grupo)$/i
 handler.admin = true
 handler.botAdmin = true
 handler.exp = 200
